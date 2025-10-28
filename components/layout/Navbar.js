@@ -35,9 +35,6 @@ export default function Navbar() {
                 My Learning
               </Link>
             )}
-            <Link href="/about" className="text-gray-700 hover:text-indigo-600 font-medium transition-colors">
-              About
-            </Link>
           </div>
 
           {/* User Actions */}

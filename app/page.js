@@ -55,11 +55,6 @@ export default function HomePage() {
                       Get Started Free
                     </Button>
                   </Link>
-                  <Link href="/courses">
-                    <Button variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white/10 px-8 py-6 text-lg font-semibold">
-                      Explore Courses
-                    </Button>
-                  </Link>
                 </>
               )}
             </div>
@@ -158,11 +153,7 @@ export default function HomePage() {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="/courses">
-            <Button variant="outline" className="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-8 py-6 text-lg">
-              View All Courses
-            </Button>
-          </Link>
+       
         </div>
       </section>
 

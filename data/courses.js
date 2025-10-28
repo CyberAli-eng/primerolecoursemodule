@@ -292,50 +292,7 @@ Ready to transform your revenue operations? Let's begin! 🚀`
         "Performance Metrics"
       ]
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
     
   },
-  {
-    id: "sales-leadership",
-    slug: "sales-leadership",
-    title: "Executive Sales Leadership Program",
-    subtitle: "Lead high-performance sales teams to exceed revenue targets and drive business growth",
-    duration: "4 Months",
-    level: "Executive",
-    cohortStart: "Feb 1, 2025",
-    instructor: "Marcus Johnson, CRO",
-    category: "Sales Leadership",
-    thumbnail: "https://images.pexels.com/photos/7616608/pexels-photo-7616608.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "Advanced leadership training for sales executives and revenue leaders",
-    price: "FREE",
-    originalPrice: "$4,799",
-    features: [
-      "8 intensive modules",
-      "Executive coaching sessions",
-      "Peer networking opportunities",
-      "Strategy workshops",
-      "Board presentation training",
-      "Leadership certification"
-    ],
-    modules: [],
-    assessments: [],
-    certification: {
-      title: "Executive Sales Leadership Certificate",
-      issuer: "PrimeRole Institute",
-      validFor: "2 years",
-      skills: ["Sales Strategy", "Team Leadership", "Revenue Growth", "Executive Communication"]
-    }
-  }
+ 
 ]
