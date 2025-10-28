@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-blue-700 to-purple-800">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#7f56d9] via-[#7f56d9] to-[#7f56d9] h-[600px] flex items-center">
         <div className="absolute inset-0 opacity-20">
           <img 
             src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?crop=entropy&cs=srgb&fm=jpg&q=85&w=1920"
@@ -56,7 +56,7 @@ export default function HomePage() {
                     </Button>
                   </Link>
                   <Link href="/courses">
-                    <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold">
+                    <Button variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white/10 px-8 py-6 text-lg font-semibold">
                       Explore Courses
                     </Button>
                   </Link>
@@ -106,7 +106,7 @@ export default function HomePage() {
                     className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4">
-                    <div className="bg-white rounded-full px-4 py-1 text-sm font-semibold text-indigo-600">
+                    <div className="bg-white rounded-full px-4 py-1 text-sm font-semibold text-[#7f56d9] shadow-md">
                       {course.level}
                     </div>
                   </div>
@@ -114,12 +114,12 @@ export default function HomePage() {
 
                 {/* Course Content */}
                 <div className="p-6">
-                  <div className="flex items-center gap-2 text-sm text-indigo-600 font-semibold mb-3">
+                  <div className="flex items-center gap-2 text-sm text-[#7f56d9] font-semibold mb-3">
                     <GraduationCap className="w-4 h-4" />
                     {course.category}
                   </div>
-                  
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors">
+
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#7f56d9] transition-colors">
                     {course.title}
                   </h3>
                   
@@ -147,7 +147,7 @@ export default function HomePage() {
                         </span>
                       )}
                     </div>
-                    <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
+                    <Button className="bg-[#7f56d9] hover:bg-[#6b4fbb] text-white">
                       View Course
                     </Button>
                   </div>
@@ -223,7 +223,7 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-3xl p-12 text-center text-white">
+        <div className="bg-[#7f56d9] rounded-3xl p-12 text-center text-white">
           <h2 className="text-4xl font-bold mb-4">
             Ready to Transform Your Career?
           </h2>

@@ -24,6 +24,11 @@ export default function LearnPage() {
   const [currentLessonIndex, setCurrentLessonIndex] = useState(0)
 
   const course = courses.find(c => c.slug === params.slug)
+  // Add this function to handle subtitle generation
+  const handleSubtitleGenerate = (subtitles) => {
+    console.log('Generated subtitles:', subtitles)
+    // You can save these subtitles to your database or state
+  }
 
   // Redirect to login if not authenticated
   useEffect(() => {
@@ -167,6 +172,9 @@ export default function LearnPage() {
             <VideoPlayer 
               videoUrl={currentLesson.videoUrl} 
               onComplete={() => !isLessonCompleted && completeLesson(currentLesson.id)}
+              title={currentLesson.title}
+              description={currentLesson.description}
+              onSubtitleGenerate={handleSubtitleGenerate}
             />
             {currentLesson.description && (
               <div className="mt-6 p-6 bg-gray-50 rounded-xl">
@@ -188,20 +196,35 @@ export default function LearnPage() {
           </div>
         )
 
-      case 'quiz':
+     case 'quiz':
         const assessment = course.assessments.find(a => a.module === currentModule.id)
         if (!assessment) {
-          return <div className="text-center py-12 text-gray-600">Quiz not available</div>
+          return <div className="text-center py-12 text-gray-600">Assessment not available</div>
         }
         return (
           <QuizComponent
             questions={assessment.questions}
             passingScore={assessment.passingScore}
+            moduleTitle={currentModule.title}
             onComplete={(passed, score) => {
               if (passed) {
                 completeLesson(currentLesson.id)
-                updateProgress({ ...progress, score })
+                // Auto-progress to next module after successful quiz
+                setTimeout(() => {
+                  completeModule(currentModule.id)
+                  const currentModuleIndex = course.modules.findIndex(m => m.id === currentModule.id)
+                  const nextModule = course.modules[currentModuleIndex + 1]
+                  if (nextModule) {
+                    navigateToModule(nextModule.id)
+                    setCurrentLessonIndex(0)
+                  } else {
+                    // Course completed
+                    toast.success('🎉 Course Completed! Generating your certificate...')
+                    router.push(`/courses/${course.slug}/certificate`)
+                  }
+                }, 1000)
               }
+              updateProgress({ ...progress, score: Math.max(progress.score, score) })
             }}
           />
         )

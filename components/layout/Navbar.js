@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div className="bg-gradient-to-br from-indigo-600 to-purple-600 p-2 rounded-lg">
+            <div className="bg-[#7f56d9] p-2 rounded-lg">
               <GraduationCap className="w-6 h-6 text-white" />
             </div>
             <span className="text-xl font-bold text-gray-900">PrimeRole Institute</span>
@@ -82,7 +82,7 @@ export default function Navbar() {
                   </Button>
                 </Link>
                 <Link href="/signup">
-                  <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
+                  <Button className="bg-[#7f56d9] hover:bg-[#6b4fbb] text-white">
                     Get Started
                   </Button>
                 </Link>

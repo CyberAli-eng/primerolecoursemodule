@@ -3,7 +3,7 @@ export const courses = [
   {
     id: "revops",
     slug: "revenue-operations",
-    title: "Professional Certificate in Revenue Operations",
+    title: "Revenue Operations",
     subtitle: "Master the complete RevOps framework to align sales, marketing, and customer success",
     duration: "8 Weeks",
     level: "Professional",
@@ -66,15 +66,16 @@ Ready to transform your revenue operations? Let's begin! 🚀`
             type: "video",
             title: "What is Revenue Operations?",
             duration: "18 min",
-            videoUrl: "/videos/revops/module-1-lesson-2.mp4",
-            description: "Understanding the core principles and business impact"
+            videoUrl: "/videos/revops/Revops 1.1.mp4",
+            description: "Introduction to RevOps and its role in modern businesses"
           },
           {
             id: "lesson-1-3",
-            type: "reading",
+            type: "video",
             title: "The Evolution of RevOps",
             duration: "10 min",
-            content: "Revenue Operations has evolved from siloed departmental functions into a unified business strategy. In the past, marketing, sales, and customer success operated independently with separate goals, metrics, and tools. This created friction, data discrepancies, and revenue leakage. Today, RevOps represents a fundamental shift toward aligning all revenue-facing teams around shared objectives, common data, and integrated processes to drive sustainable growth."
+            videoUrl: "/videos/revops/Revops 1.2.mp4",
+            description: "Understanding the core principles and business impact and Revenue Operations has evolved from siloed departmental functions into a unified business strategy. In the past, marketing, sales, and customer success operated independently with separate goals, metrics, and tools. This created friction, data discrepancies, and revenue leakage. Today, RevOps represents a fundamental shift toward aligning all revenue-facing teams around shared objectives, common data, and integrated processes to drive sustainable growth.",
           },
           {
             id: "lesson-1-4",
@@ -98,7 +99,7 @@ Ready to transform your revenue operations? Let's begin! 🚀`
             type: "video",
             title: "Mapping the Revenue Journey",
             duration: "20 min",
-            videoUrl: "/videos/revops/module-2-lesson-1.mp4",
+            videoUrl: "/videos/revops/Revops Mod 2.1.mp4",
             description: "From lead to lifetime value mapping"
           },
           {
@@ -204,11 +205,80 @@ Ready to transform your revenue operations? Let's begin! 🚀`
             explanation: "Technology supports RevOps by integrating systems and providing actionable insights."
           }
         ]
+      },
+      {
+        id: "assessment-2",
+        title: "RevOps Fundamentals Assessment",
+        module: "module-2",
+        passingScore: 80,
+        timeLimit: 15,
+        questions: [
+          {
+            id: "q1",
+            question: "What is the primary goal of Revenue Operations?",
+            options: [
+              "Increase sales team size",
+              "Align sales, marketing, and customer success",
+              "Reduce marketing budget",
+              "Automate all processes"
+            ],
+            correctAnswer: "Align sales, marketing, and customer success",
+            explanation: "RevOps focuses on breaking down silos between departments to create a unified revenue engine."
+          },
+          {
+            id: "q2",
+            question: "Which department is NOT typically part of RevOps alignment?",
+            options: [
+              "Marketing",
+              "Sales",
+              "Customer Success",
+              "Product Development"
+            ],
+            correctAnswer: "Product Development",
+            explanation: "While RevOps influences many revenue-related functions, product development typically operates separately."
+          },
+          {
+            id: "q3",
+            question: "What is the main benefit of implementing RevOps?",
+            options: [
+              "Reducing headcount across departments",
+              "Creating a single source of truth for revenue data",
+              "Eliminating the need for CRM systems",
+              "Making marketing teams obsolete"
+            ],
+            correctAnswer: "Creating a single source of truth for revenue data",
+            explanation: "RevOps unifies data, processes, and goals across revenue-generating teams."
+          },
+          {
+            id: "q4",
+            question: "Which metric is most important for RevOps alignment?",
+            options: [
+              "Department-specific KPIs",
+              "Individual team performance",
+              "Shared revenue metrics",
+              "Tool utilization rates"
+            ],
+            correctAnswer: "Shared revenue metrics",
+            explanation: "Shared metrics ensure all teams are working toward common business objectives."
+          },
+          {
+            id: "q5",
+            question: "What role does technology play in RevOps?",
+            options: [
+              "It replaces human decision-making entirely",
+              "It serves as an enabler for alignment and efficiency",
+              "It's optional and not necessary for success",
+              "It creates more complexity than value"
+            ],
+            correctAnswer: "It serves as an enabler for alignment and efficiency",
+            explanation: "Technology supports RevOps by integrating systems and providing actionable insights."
+          }
+        ]
       }
     ],
 
     certification: {
-      title: "Professional Certificate in Revenue Operations",
+      title: "Revenue Operations",
       issuer: "PrimeRole Institute",
       validFor: "Lifetime",
       skills: [
@@ -222,12 +292,26 @@ Ready to transform your revenue operations? Let's begin! 🚀`
         "Performance Metrics"
       ]
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
   },
   {
     id: "sales-leadership",
     slug: "sales-leadership",
     title: "Executive Sales Leadership Program",
-    subtitle: "Lead high-performance sales teams to exceed revenue targets",
+    subtitle: "Lead high-performance sales teams to exceed revenue targets and drive business growth",
     duration: "4 Months",
     level: "Executive",
     cohortStart: "Feb 1, 2025",

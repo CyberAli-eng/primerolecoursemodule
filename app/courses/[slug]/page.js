@@ -111,13 +111,13 @@ export default function CourseDetailPage() {
               <Button 
                 onClick={handleEnroll}
                 disabled={isEnrolling}
-                className="bg-white text-indigo-600 hover:bg-gray-100 px-8 py-6 text-lg font-semibold"
+                className="bg-white text-[#7f56d9] hover:bg-gray-100 px-8 py-6 text-lg font-semibold"
               >
                 {isEnrolling ? 'Enrolling...' : 'Enroll Now - FREE'}
               </Button>
               {session && (
                 <Link href={`/courses/${course.slug}/learn`}>
-                  <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
+                  <Button variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white/10 px-8 py-6 text-lg">
                     <PlayCircle className="w-5 h-5 mr-2" />
                     Start Learning
                   </Button>
@@ -161,7 +161,7 @@ export default function CourseDetailPage() {
                 {course.modules.map((module, index) => (
                   <div key={module.id} className="border border-gray-200 rounded-xl p-6 hover:border-indigo-300 transition-colors">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-indigo-600 text-white rounded-xl flex items-center justify-center font-bold text-lg">
+                      <div className="flex-shrink-0 w-12 h-12 bg-[#7f56d9] text-white rounded-xl flex items-center justify-center font-bold text-lg">
                         {index + 1}
                       </div>
                       <div className="flex-1">
@@ -199,7 +199,7 @@ export default function CourseDetailPage() {
               <Button 
                 onClick={handleEnroll}
                 disabled={isEnrolling}
-                className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-6 text-lg font-semibold mb-4"
+                className="w-full bg-[#7f56d9] hover:bg-[#6b4fbb] text-white py-6 text-lg font-semibold mb-4"
               >
                 {isEnrolling ? 'Enrolling...' : 'Enroll Now'}
               </Button>
