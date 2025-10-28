@@ -49,10 +49,6 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="hover:text-indigo-400 transition-colors">About Us</Link></li>
-              <li><Link href="/instructors" className="hover:text-indigo-400 transition-colors">Instructors</Link></li>
-              <li><Link href="/careers" className="hover:text-indigo-400 transition-colors">Careers</Link></li>
-              <li><Link href="/contact" className="hover:text-indigo-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -86,10 +82,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} PrimeRole Institute. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <Link href="/privacy" className="hover:text-indigo-400 transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-indigo-400 transition-colors">Terms of Service</Link>
-            <Link href="/cookies" className="hover:text-indigo-400 transition-colors">Cookie Policy</Link>
-          </div>
+q\          </div>
         </div>
       </div>
     </footer>

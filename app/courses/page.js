@@ -11,10 +11,6 @@ export default function CoursesPage() {
       <section className="bg-gradient-to-br from-indigo-600 to-purple-700 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center text-white">
-            <h1 className="text-5xl font-bold mb-4">Explore Our Courses</h1>
-            <p className="text-xl text-indigo-100">
-              Professional certification programs to accelerate your career
-            </p>
           </div>
         </div>
       </section>
