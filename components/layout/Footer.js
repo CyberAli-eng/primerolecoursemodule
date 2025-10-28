@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="bg-gradient-to-br from-indigo-600 to-purple-600 p-2 rounded-lg">
+              <div className="bg-[#7f56d9] p-2 rounded-lg">
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
               <span className="text-xl font-bold text-white">PrimeRole</span>

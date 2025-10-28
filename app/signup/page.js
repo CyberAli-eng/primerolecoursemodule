@@ -78,7 +78,7 @@ export default function SignupPage() {
       <div className="w-full max-w-md">
         {/* Logo */}
         <Link href="/" className="flex items-center justify-center gap-2 mb-8">
-          <div className="bg-gradient-to-br from-indigo-600 to-purple-600 p-3 rounded-xl">
+          <div className="bg-gradient-to-br from-[#7f56d9] to-[#6b4fbb] p-3 rounded-xl">
             <GraduationCap className="w-8 h-8 text-white" />
           </div>
           <span className="text-2xl font-bold text-gray-900">PrimeRole</span>
@@ -168,7 +168,7 @@ export default function SignupPage() {
 
             <Button
               type="submit"
-              className="w-full h-12 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold"
+              className="w-full h-12 bg-[#7f56d9] hover:bg-[#6b4fbb] text-white font-semibold"
               disabled={isLoading}
             >
               {isLoading ? 'Creating account...' : 'Create Account'}
@@ -178,7 +178,7 @@ export default function SignupPage() {
           <div className="mt-6 text-center">
             <p className="text-gray-600">
               Already have an account?{' '}
-              <Link href="/login" className="text-indigo-600 hover:text-indigo-700 font-semibold">
+              <Link href="/login" className="text-[#7f56d9] hover:text-[#6b4fbb] font-semibold">
                 Sign in
               </Link>
             </p>
